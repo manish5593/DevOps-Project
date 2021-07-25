@@ -1,0 +1,105 @@
+/* CSS Adjustments */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: 'lightblue';
+    color: #2d3c49;
+}
+
+.container-img {
+    display: inline-block;
+    position: relative;
+    padding-left: 0px;
+    width: 420%;
+    max-height: 240px;
+    padding-top: 5%;
+}
+
+header h1,
+h4 {
+    font-weight: calc(300 + 0.4vw);
+    margin-right: 10px;
+    text-align: right;
+
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+hr {
+    border: none;
+    background-color: #7d97ad;
+    height: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-item {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.img-rounded {
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+}
+
+.featured {
+    color: #7d97ad;
+}
+
+.post-item {
+    margin: 0 0 5px 0;
+    text-align: justify;
+    text-justify: auto;
+    display: inline-block;
+    position: relative;
+}
+
+.margin-top {
+    margin: 30px 0 0;
+}
+
+/* Media Queries */
+@media screen and (min-width: 575px) {
+    .post-item {
+        width: 50%;
+    }
+
+    .my-info {
+        font-size: calc(16px + 6 * ((100vw - 575px) / 680));
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    header h1,
+    h4 {
+        text-align: center;
+    }
+
+    .img-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+    }
+
+}
